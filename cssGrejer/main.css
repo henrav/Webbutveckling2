@@ -1,0 +1,18 @@
+#mainHeader{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#mainHeader h1{
+    margin: 0;
+}
+
+#centerBox{
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
