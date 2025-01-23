@@ -7,9 +7,14 @@
 <body>
 <h1 id="mainHeader">tjena</h1>
 <div id="centerBox">
-    <p>Detta är en sida</p>
-    <p>med två paragrafer hittils</p>
-    <p>och en tredje</p>
+    <div id="centerBox" style="width: 60%">
+        <h2>
+            PHP-sida 1 Allmänt
+        </h2>
+        <p>
+            skriv in nånting och så mixar denna sida till det
+        </p>
+    </div>
     <?php
     echo "<p>denna text är genererad med php echo!!!</p>";
     ?>

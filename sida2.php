@@ -33,8 +33,13 @@ if (isset($_POST['skicka'])){
 }
 ?>
 <div id="centerBoxContainer">
-    <div id="centerBox">
-        <p>sida2, nånting med arrayer</p>
+    <div id="centerBox" style="width: 60%">
+        <h2>
+            PHP-sida 2 Allmänt
+        </h2>
+        <p>
+            mata in några djur i formuläret nedan snälla, sedan flyttas dem runt!!!
+        </p>
     </div>
     <div id="formbox">
         <div id="formbox1">
@@ -60,16 +65,16 @@ if (isset($_POST['skicka'])){
     </div>
     <?php
     if (sizeof($djurArray) == 3){                                      // bara så den inte printar när man laddar sidan
-        echo "<div id='centerBox'>                                <!-- 5b, Skriver ut arrayen i råformat med funktionen print_r. -->
+        echo "<div id='centerBox' style='height: 10%'>                                <!-- 5b, Skriver ut arrayen i råformat med funktionen print_r. -->
             <p>" . print_r($djurArray, true) . "</p>
           </div>";
         $djurArray[2] = "struts";                                   //5c, Ersätter djuret på tredje platsen med djuret ”Struts”.
         array_push($djurArray, "Alpacka");          //5d, Lägger till ett fjärde djur ”Alpacka” sist i arrayen.
         array_splice($djurArray, 0, 1);       //5e, Tar bort det första elementet helt från arrayen.
-        echo "<div id='centerBox'>                                <!--5f, Skriver ut arrayen i råformat med funktionen print_r.-->
+        echo "<div id='centerBox' style='height: 10%'>                                <!--5f, Skriver ut arrayen i råformat med funktionen print_r.-->
             <p>" . print_r($djurArray, true) . "</p>
             </div>";
-        echo "<div id='centerBox'>                                <!--5g, Skriver ut elementet som finns på andra platsen i arrayen, vilket nu borde vara ”Struts” eftersom det första djuret är borttaget.-->
+        echo "<div id='centerBox' style='height: 10%'>                                <!--5g, Skriver ut elementet som finns på andra platsen i arrayen, vilket nu borde vara ”Struts” eftersom det första djuret är borttaget.-->
                 <p>" . $djurArray[1] . "</p>
               </div>";
     }
