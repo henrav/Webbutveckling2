@@ -5,7 +5,14 @@
     <link rel="stylesheet" type="text/css" href="cssGrejer/main.css">
 </head>
 <body>
-<h1 id="mainHeader">tjena</h1>
+<div class="tjenaHeader">
+    <div class="centreragrejenkomigenvarförvillduintevaraicenterjagfårpanik">
+        <?php
+        include_once 'navBarGrejsimojs.php';
+        ?>
+    </div>
+    <h1 class="mainHeader">tjena</h1>
+</div>
 <?php
     if (isset($_POST['skicka'])){
         $textERROR = '';       // deklarera variabler och grajsor
@@ -29,18 +36,18 @@
 
 
 ?>
-<div id="centerBoxContainer">
-    <div id="centerBox" style="width: 60%">
+<div class="centerBoxContainer">
+    <div class="centerBox" style="width: 60%">
         <h2>
             PHP-sida 3 Allmänt
         </h2>
         <p>
             Här är en sida som inte gör något speciellt
         </p>
-        <div id="formbox">
-            <div id="formbox1">
+        <div class="formbox">
+            <div class="formbox1">
                 <form action="" method="post" id="formgrej">
-                    <div id="formboxDiv">
+                    <div class="formboxDiv">
                         <div style="justify-self: right">
                             <label for="derasText">Skriv in din text nu, annars...</label>
                         </div>
@@ -51,14 +58,14 @@
                             <span class="error" style="color: red"> <?php echo !empty($textERROR) ? "*" . $textERROR : ""; ?></span>    <!-- om man inte skriver in ajabaja -->
                         </div>
                     </div>
-                    <div id="formboxDiv">
+                    <div class="formboxDiv">
                         <div style="justify-self: right">
                             <label for="sökOrd">skriv ordet nu...</label>
                         </div>
                         <div>
                             <input type="text" id="sökordet" name="sökOrd" value="<?php echo isset($_POST['sökOrd']) ? ($_POST['sökOrd']) : ''; ?>">
                         </div>
-                        <div id="nygrej">
+                        <div class="nygrej">
                             <div>
                                 <button type="submit" id="skickaKnappen" name="skicka">skicka</button>
                             </div>
@@ -71,8 +78,8 @@
             </form>
 
     </div>
-        <div id="newbox">
-            <div id="newbox1">
+        <div class="newbox">
+            <div class="newbox1">
                 <h2>
                     <?php
                     if (!empty($textArray) && empty($textERROR)){      //om textarray inte är tom och texterror är tom
@@ -90,7 +97,7 @@
                     ?>
                 </h3>
             </div>
-            <div id="newbox2">
+            <div class="newbox2">
 
                 <p>
                     <?php

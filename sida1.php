@@ -4,10 +4,18 @@
     <title>Sida 1</title>
     <link rel="stylesheet" type="text/css" href="cssGrejer/main.css">
 </head>
+
 <body>
-<h1 id="mainHeader">tjena</h1>
-<div id="centerBox">
-    <div id="centerBox" style="width: 60%">
+<div class="tjenaHeader">
+    <div class="centreragrejenkomigenvarförvillduintevaraicenterjagfårpanik">
+        <?php
+        include_once 'navBarGrejsimojs.php';
+        ?>
+    </div>
+    <h1 class="mainHeader">tjena</h1>
+</div>
+<div class="centerBox">
+    <div class="centerBox" style="width: 60%">
         <h2>
             PHP-sida 1 Allmänt
         </h2>
@@ -29,8 +37,8 @@
     if (isset($_POST['skicka'])) { // om skicka-knappen är tryckt
         if (empty($_POST['namn'])) { // om rutan är tom
             echo "<p>du måste skriva något i rutan</p>"; //skriv ajabaja
-            return;//avsluta
-        } else {//annars
+            return;
+        } else {
             $strName = $_POST['namn']; //skriv grajsorna
             echo "<p>Hej " . $strName . "</p>";
             echo "<p>Baklänges: " . strrev($strName) . "</p>";

@@ -14,16 +14,23 @@ $methodKöra = $_SERVER['REQUEST_METHOD']
     <link rel="stylesheet" type="text/css" href="cssGrejer/main.css">
 </head>
 <body>
-<h1 id="mainHeader">tjena</h1>
-<div id="centerBoxContainer">
-    <div id="centerBox" style="width: 60%">
+<div class="tjenaHeader">
+    <div class="centreragrejenkomigenvarförvillduintevaraicenterjagfårpanik">
+        <?php
+        include_once 'navBarGrejsimojs.php';
+        ?>
+    </div>
+    <h1 class="mainHeader">tjena</h1>
+</div>
+<div class="centerBoxContainer">
+    <div class="centerBox" style="width: 60%">
         <h2>
             PHP-sida 5 Allmänt
         </h2>
         <p>
             Här är en sida som inte gör något speciellt
         </p>
-        <div id="formbox">
+        <div class="formbox">
             <?php
                 echo "<p>$serverNamn</p>";
                 echo "<p>$userIP</p>";

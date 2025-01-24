@@ -43,20 +43,28 @@ if (isset($_POST['skicka'])){    //om klickar skicka
     <title>Sida 4</title>
     <link rel="stylesheet" type="text/css" href="cssGrejer/main.css">
 </head>
+
 <body>
-<h1 id="mainHeader">tjena</h1>
-<div id="centerBoxContainer">
-    <div id="centerBox" style="width: 60%">
+<div class="tjenaHeader">
+    <div class="centreragrejenkomigenvarförvillduintevaraicenterjagfårpanik">
+        <?php
+        include_once 'navBarGrejsimojs.php';
+        ?>
+    </div>
+    <h1 class="mainHeader">tjena</h1>
+</div>
+<div class="centerBoxContainer">
+    <div class="centerBox" style="width: 60%">
         <h2>
             PHP-sida 4 Allmänt
         </h2>
         <p>
             Här är en sida som inte gör något speciellt
         </p>
-        <div id="formbox">
-            <div id="formbox1">
+        <div class="formbox">
+            <div class="formbox1">
                 <form action ="" method="post" id="formgrej">
-                    <div id="formboxDiv">
+                    <div class="formboxDiv">
                         <div>
                             <label for="length">Ange längd:</label>
                         </div>
@@ -67,7 +75,7 @@ if (isset($_POST['skicka'])){    //om klickar skicka
                             <span class="error" style="color: red"> <?php echo !empty($lengthError) ? "*" . $lengthError : ""; ?></span>
                         </div>
                     </div>
-                    <div id ="formboxDiv">
+                    <div class ="formboxDiv">
                         <div>
                             <label for="width">Ange bredd:</label>
                         </div>

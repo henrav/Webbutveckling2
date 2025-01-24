@@ -1,15 +1,15 @@
-#mainHeader{
+.mainHeader{
     background-color: #333;
     color: white;
     padding: 10px;
     text-align: center;
 }
 
-#mainHeader h1{
+.mainHeader h1{
     margin: 0;
 }
 
-#centerBox{
+.centerBox{
     background-color: #f9f9f9;
     padding: 20px;
     margin: 0 auto;
@@ -18,14 +18,14 @@
     height: fit-content;
 }
 
-#centerBoxContainer{
+.centerBoxContainer{
     display: flex;
     flex-direction: column;
     grid-template-rows: 1fr 1fr;
     grid-gap: 10px;
 }
 
-#formbox{
+.formbox{
     display: inline-block;
     flex-direction: row;
     align-items: center;
@@ -36,12 +36,12 @@
     text-align: center;
 }
 
-#formbox >*{
+.formbox >*{
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-#formbox1{
+.formbox1{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +51,7 @@
     width: 100%;
 }
 
-#formboxDiv{
+.formboxDiv{
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     padding: 10px;
@@ -62,12 +62,12 @@
     align-items: center;
 }
 
-#formboxDiv >*{
+.formboxDiv >*{
     padding-left: 10px;
     padding-right: 10px;
 
 }
-#newbox{
+.newbox{
     background-color: #f9f9f9;
     margin: 0 auto;
     width: 100%;
@@ -77,13 +77,13 @@
 
 
 
-#formboxDiv span{
+.formboxDiv span{
     text-align: left;
 }
 
 
 
-#formgrej{
+.formgrej{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,13 +94,13 @@
     text-align: center;
     width: 100%;
 }
-#formgrej >*{
+.formgrej >*{
     padding-bottom: 15px;
     padding-top: 15px;
     margin-bottom: 15px;
 }
 
-#nygrej{
+.nygrej{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -111,9 +111,23 @@
     text-align: center;
     width: 100%;
 }
-#nygrej >*{
+.nygrej >*{
     padding-left: 5px;
     padding-right: 5px;
 }
+
+
+.tjenaHeader{
+    background-color: #333333;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+
+}
+
+.centreragrejenkomigenvarförvillduintevaraicenterjagfårpanik{
+  margin: auto;
+
+}
+
 
 
