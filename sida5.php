@@ -8,7 +8,7 @@ $methodKöra = $_SERVER['REQUEST_METHOD']
 ?>
 
 
-<html>
+<!DOCTYPE html>
 <head>
     <title>Sida 5</title>
     <link rel="stylesheet" type="text/css" href="cssGrejer/main.css">

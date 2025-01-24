@@ -5,6 +5,13 @@
       <webServer id="e649e4ae-142a-4152-a025-b3a63864fd46" name="test" url="http://localhost:8080/">
         <fileTransfer mountedRoot="" accessType="MOUNT" port="0" />
       </webServer>
+      <webServer id="5b36fced-4eeb-4261-bf99-080b6d79c878" name="LTU-server" url="http://swplayground.ltu.se/d0019e/vt25/henrav2">
+        <fileTransfer rootFolder="/usr/share/nginx/html/d0019e/vt25/henrav2" accessType="SFTP" host="swplayground.ltu.se" port="22" sshConfigId="b15f1f0a-1c03-4dbd-886e-77eed5ef0347" sshConfig="henrav2@swplayground.ltu.se:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

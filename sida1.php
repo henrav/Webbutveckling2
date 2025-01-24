@@ -1,5 +1,5 @@
 
-<html>
+<!DOCTYPE html>
 <head>
     <title>Sida 1</title>
     <link rel="stylesheet" type="text/css" href="cssGrejer/main.css">
@@ -28,7 +28,7 @@
     ?>
     <form action="" method="post">  <!-- formulär för att skicka data till servern -->
         <label for="namn">ange namn:</label>
-        <input type="text" id="Namnet" name="namn" placeholder="Skriv ditt namn här föfan">
+        <input type="text" id="namn" name="namn" placeholder="Skriv ditt namn här föfan">
         <button type="submit" id="skickaKnappen" name="skicka">skicka</button>
     </form>
 

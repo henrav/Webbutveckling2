@@ -21,8 +21,8 @@ function räknaArea ($längd, $bredd){  // räkna area
 
 $length = $width = '';
 $lengthError = $widthError = '';  // deklarera variabler
-if (isset($_POST['skicka'])){    //om klickar skicka
-    if (empty($_POST['length']) || $_POST['length'] <= 0){   // kollar
+if (isset($_POST['skickaKnappen'])){    //om klickar skicka
+    if (empty($_POST['length']) || $_POST['length'] <= 0){   // kollar om man skrivit grejer
         $lengthError = "skriv in längd";
     }else{
         $length = $_POST['length'];
@@ -38,7 +38,7 @@ if (isset($_POST['skicka'])){    //om klickar skicka
 ?>
 
 
-<html>
+<!DOCTYPE html>
 <head>
     <title>Sida 4</title>
     <link rel="stylesheet" type="text/css" href="cssGrejer/main.css">
@@ -59,7 +59,7 @@ if (isset($_POST['skicka'])){    //om klickar skicka
             PHP-sida 4 Allmänt
         </h2>
         <p>
-            Här är en sida som inte gör något speciellt
+            skriv längden och bredden på din sak, efter det så räknar vi ut dens omkrets och area!!! (=
         </p>
         <div class="formbox">
             <div class="formbox1">
@@ -84,7 +84,7 @@ if (isset($_POST['skicka'])){    //om klickar skicka
                         </div>
                         <div id="nygrej">
                             <div>
-                                <button type="submit" id="skickaKnappen" name="skicka">skicka</button>
+                                <button type="submit" id="skickaKnappen" name="skickaKnappen">skicka</button>
                             </div>
                             <div>
                                 <span class="error" style="color: red"> <?php echo !empty($widthError) ? "*" . $widthError : ""; ?></span>    <!-- om man inte skriver in ajabaja -->
@@ -96,7 +96,7 @@ if (isset($_POST['skicka'])){    //om klickar skicka
         </div>
         <div>
             <?php
-                if (isset($_POST['skicka'])){
+                if (isset($_POST['skickaKnappen'])){
                     if (!empty($length) && !empty($width)){
                         räknaOmkrets($length, $width);
                     }
